@@ -6,10 +6,10 @@ using namespace std;
 
 int main()
 {
-	bool tr = false, Tr2 = false, Tr3 = false, Tr4 = false;
+	bool Tr = false, Tr2 = false, Tr3 = false, Tr4 = false;
 	string A, B, C, D;
 	system("chcp 1251");
-	while (tr == false) 
+	while (Tr == false) 
 	{		
 		cout << "Ќа вопрос прошу отвечать да или нет:" << endl;
 		while (Tr4 == false)
@@ -18,6 +18,7 @@ int main()
 			cin >> A;
 			if (A == "нет")
 			{
+				Tr = true;
 				Tr4 = true;
 				break;
 			}
@@ -40,6 +41,7 @@ int main()
 					cin >> B;
 					if (B == "да")
 					{
+						Tr = true;
 						Tr3 = true;
 						Tr4 = true;
 						break;
@@ -51,6 +53,7 @@ int main()
 						cin >> C;
 						if (C == "да")
 						{
+							Tr = true;
 							Tr3 = true;
 							Tr4 = true;
 							break;
