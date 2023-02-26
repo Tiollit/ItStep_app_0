@@ -1,12 +1,14 @@
 #include <iostream>
 #include <string>
+#include <locale>
+#include <windows.h>
 using namespace std;
 
 int main()
 {
 	bool tr = false, Tr2 = false, Tr3 = false, Tr4 = false;
 	string A, B, C, D;
-	setlocale(LC_ALL, "Russian");
+	system("chcp 1251");
 	while (tr == false) 
 	{		
 		cout << "На вопрос прошу отвечать да или нет:" << endl;
