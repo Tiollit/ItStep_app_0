@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-	bool Tr1 = false, Tr2 = false, Tr3 = false, Tr4 = false, Tr5 = false;
-	string A, B, C, D, E, F;
+	bool Tr1 = false, Tr2 = false, Tr3 = false, Tr4 = false, Tr5 = false, Tr6 = false;
+	string A, B, C, D, E, F, G;
 	system("chcp 1251");
 	cout << "Проверка блока питания:" << endl;
 	cout << "На вопросы прошу отвечать да или нет" << endl;
@@ -54,7 +54,7 @@ int main()
 								{
 									cout << "Проверить исправность термистора и элементов подключения напряжения" << endl;                                
 								}
-								else if (E == "нет")
+								else if (E == "да")
 								{
 									Tr4 = true;
 								}
@@ -64,15 +64,27 @@ int main()
 							{
 								cout << "Вспомагательный преобразователь выдает напряжение +5В SB?" << endl;
 								cin >> F;
-
-							 
+								if (F == "да")
+								{
+									cout << "присутствует напряжение питания мс ШИМ (12,7)?" << endl;
+									cin >> G;
+									if (G == "да")
+									{
+										Tr5 = true;
+									}
+									else if (G == "нет")
+									{
+										cout << "Проверить работу випрямителя вспомогательного преобразователя" << endl;
+									}
+								}							 
 							}
+							while (Tr6 = false)
+							{
 
+							}
 						}
-
 					}
 				}
-
 			}
 		}
 	}
